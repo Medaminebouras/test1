@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".homepage">
+
+    <View
+        android:id="@+id/view"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:background="@color/primarycolor"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="-3dp" />
+
+    <android.support.v7.widget.CardView
+        android:layout_width="372dp"
+        android:layout_height="235dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginEnd="24dp"
+        app:cardCornerRadius="10dp"
+        app:cardElevation="8dp"
+        app:layout_constraintBottom_toBottomOf="@+id/view"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/view">
+
+        <TextView
+            android:id="@+id/textView5"
+            android:layout_width="176dp"
+            android:layout_height="52dp"
+            android:gravity="center"
+            android:text="défi quotidien"
+            android:textColor="@color/primarycolor"
+            android:textSize="20sp" />
+
+        <ProgressBar
+            android:layout_width="174dp"
+            android:layout_height="144dp"
+
+            android:layout_gravity="center"
+            android:indeterminateOnly="false"
+            android:progressDrawable="@drawable/circle"
+            tools:progress="60"
+            />
+
+
+    </android.support.v7.widget.CardView>
+</android.support.constraint.ConstraintLayout>
